@@ -22,10 +22,10 @@
 
             {% if request.user.is_authenticated %}
             <li class="nav-item">
-                <a class="nav-link {% if request.path == "/dashboard" %} active {% endif %}" href="/dashboard">Dashboard</a>
+                <a class="nav-link {% if request.path == "/dashboard/" %} active {% endif %}" href="/dashboard">Dashboard</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {% if request.path == "/login/" %} active {% endif %}" href="/logout/">Log out</a>
+                <a class="nav-link {% if request.path == "/logout/" %} active {% endif %}" href="/logout/">Log out</a>
               </li>
 
               {% else %}
